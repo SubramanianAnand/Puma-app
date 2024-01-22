@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import poster from "../assets/poster.png.png";
 import { arrowRight } from "../assets/icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Specialoffer = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="flex justify-between items-center max-xl:flex-col-reverse gap-10 max-container">
-      <div className="flex-1">
+      <div data-aos="fade-right" className="flex-1">
         <img src={poster} alt="poster" width={773} height={687} />
       </div>
-      <div className="flex-1 flex flex-col">
+      <div data-aos="fade-left" className="flex-1 flex flex-col">
         <h2 className="text-[48px] leading-11 font-bold">
           <span className="text-red-500">Special </span>Offer
         </h2>

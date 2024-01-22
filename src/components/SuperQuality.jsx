@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import shoe7 from '../assets/pngwing7.com.png'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SuperQuality = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section id="about" className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container">
-      <div className="flex flex-1 flex-col">
+      <div data-aos="fade-right" className="flex flex-1 flex-col">
         <h2 className=" text-[48px] leading-11 font-bold lg:max-w-lg">
           We Provide You<span className="text-red-500"> Super Quality</span>{" "}
           Shoes
@@ -19,7 +26,7 @@ const SuperQuality = () => {
             <button className="bg-red-600 px-7 py-4 mt-10 flex justify-center items-center text-white rounded-full w-200">View details</button>
         </div>
       </div>
-      <div className="flex justify-center items-center">
+      <div data-aos="fade-left" className="flex justify-center items-center">
         <img
         src={shoe7}
         alt="product detail"

@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Subscribe = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section id='contact' className='max-container flex justify-between items-center max-lg:flex-col gap-10'>
-        <h3 className='font-bold text-[45px] leading-[68px] lg:max-w-md'>
+        <h3 data-aos="fade-right" className='font-bold text-[45px] leading-[68px] lg:max-w-md'>
         Sign Up for <span className='text-red-500'>Updates</span> & Newsletter
         </h3>
-        <div className='lg:max-w-[40%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-gray-500 rounded-full'>
+        <div data-aos="fade-left" className='lg:max-w-[40%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-gray-500 rounded-full'>
             <input
             type='text'
             placeholder='subscribe@puma.com'

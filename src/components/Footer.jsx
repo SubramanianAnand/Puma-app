@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../assets/puma-ag.svg";
 import { facebook } from "../assets/icons";
 import { twitter } from "../assets/icons";
 import { instagram } from "../assets/icons";
 import { copyrightSign } from "../assets/icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Footer = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <section className="max-container">
+    <section data-aos="fade-up" className="max-container">
       <footer className="max-container">
         <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
           <div className="flex items-start flex-col">

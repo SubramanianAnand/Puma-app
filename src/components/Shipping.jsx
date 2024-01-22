@@ -1,12 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { truckFast } from "../assets/icons";
 import { shieldTick } from "../assets/icons";
 import { support } from "../assets/icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Shipping = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="max-container flex justify-center flex-row flex-wrap gap-9">
-      <div className="flex-1  sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-2xl px-10 py-16">
+      <div data-aos="flip-right" className="flex-1  sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-2xl px-10 py-16">
         <div className="w-11 h-11 flex justify-center items-center bg-red-500 rounded-full">
           <img src={truckFast} width={24} height={24} />
         </div>
@@ -17,7 +24,7 @@ const Shipping = () => {
           Enjoy seamless shopping with our complimentary shipping service.
         </p>
       </div>
-      <div className="flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-2xl px-10 py-16">
+      <div data-aos="zoom-in" className="flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-2xl px-10 py-16">
         <div className="w-11 h-11 flex justify-center items-center bg-red-500 rounded-full">
           <img src={shieldTick} width={24} height={24} />
         </div>
@@ -28,7 +35,7 @@ const Shipping = () => {
         Experience worry-free transactions with our secure payment options.
         </p>
       </div>
-      <div className="flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-2xl px-10 py-16">
+      <div data-aos="flip-left" className="flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-2xl px-10 py-16">
         <div className="w-11 h-11 flex justify-center items-center bg-red-500 rounded-full">
           <img src={support} width={24} height={24} />
         </div>

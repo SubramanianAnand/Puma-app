@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {star} from '../assets/icons/index'
 import shoe3 from '../assets/pngwing3.com.png'
 import shoe4 from '../assets/pngwing4.com.png'
 import shoe5 from '../assets/pngwing5.com.png'
 import shoe6 from '../assets/pngwing6.com.png'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const PopularProducts = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section id="product" className="max-container max-sm:mt-12">
-      <div className="flex justify-start flex-col gap-5">
+      <div data-aos="zoom-in-right" className="flex justify-start flex-col gap-5">
         <h2 className="text-[48px] leading-10 font-bold">
           Our <span className="text-red-500">Popular</span> Products
         </h2>
@@ -18,7 +25,7 @@ const PopularProducts = () => {
         </p>
       </div>
       <div className="grid mt-16 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-14">
-        <div className=" flex flex-col flex-1 w-full max-sm:w-full">
+        <div data-aos="zoom-in-left" className=" flex flex-col flex-1 w-full max-sm:w-full">
             <img
             src={shoe3}
             alt="Puma Shoe-01"
@@ -35,7 +42,7 @@ const PopularProducts = () => {
             <p className="mt-2 font-semibold leading-normal text-[24px]">Puma Shoe-01</p>
             <p className="mt-2 font-semibold leading-normal text-[24px] text-red-500">$200.00</p>
         </div>
-        <div className="flex flex-col flex-1 w-full max-sm:w-full">
+        <div data-aos="zoom-in-left" className="flex flex-col flex-1 w-full max-sm:w-full">
             <img
             src={shoe4}
             alt="Puma Shoe-01"
@@ -52,7 +59,7 @@ const PopularProducts = () => {
             <p className="mt-2 font-semibold leading-normal text-[24px]">Puma Shoe-02</p>
             <p className="mt-2 font-semibold leading-normal text-[24px] text-red-500">$220.00</p>
         </div>
-        <div className="flex flex-col flex-1 w-full max-sm:w-full">
+        <div data-aos="zoom-in-left" className="flex flex-col flex-1 w-full max-sm:w-full">
             <img
             src={shoe5}
             alt="Puma Shoe-01"
@@ -69,7 +76,7 @@ const PopularProducts = () => {
             <p className="mt-2 font-semibold leading-normal text-[24px]">Puma Shoe-03</p>
             <p className="mt-2 font-semibold leading-normal text-[24px] text-red-500">$280.00</p>
         </div>
-        <div className="flex flex-col flex-1 w-full max-sm:w-full">
+        <div data-aos="zoom-in-left" className="flex flex-col flex-1 w-full max-sm:w-full">
             <img
             src={shoe6}
             alt="Puma Shoe-01"

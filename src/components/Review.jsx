@@ -1,20 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { customer1 } from "../assets/images";
 import { customer2 } from "../assets/images";
 import { star } from "../assets/icons/index";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Review = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="max-container">
-      <h3 className="text-center text-[48px] leading-11 font-bold">
+      <h3 data-aos="zoom-in" className="text-center text-[48px] leading-11 font-bold">
         What Our <span className="text-red-500">Customers</span> Say?
       </h3>
-      <p className="m-auto mt-4 max-w-lg text-center text-gray-500 text-lg leading-7">
+      <p data-aos="zoom-in" className="m-auto mt-4 max-w-lg text-center text-gray-500 text-lg leading-7">
         Hear genuine stories from our satisfied customers about their
         exceptional experiences with us.
       </p>
       <div className="flex flex-1 mt-24 justify-evenly items-center max-lg:flex-col gap-14 ">
-        <div className="flex justify-center items-center flex-col">
+        <div data-aos="fade-right" className="flex justify-center items-center flex-col">
           <img
             src={customer1}
             alt="customer"
@@ -34,7 +41,7 @@ const Review = () => {
             </h3>
           </div>
         </div>
-        <div className="flex justify-center items-center flex-col">
+        <div data-aos="fade-left" className="flex justify-center items-center flex-col">
           <img
             src={customer2}
             alt="customer"
