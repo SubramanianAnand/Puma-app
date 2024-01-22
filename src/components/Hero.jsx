@@ -3,6 +3,7 @@ import shoe1 from "../assets/pngwing.com.png";
 import shoe2 from "../assets/pngwing1.com.png";
 import shoe3 from "../assets/pngwing2.com.png";
 import ShoeCard from "../pages/ShoeCard";
+import { arrowRight } from "../assets/icons";
 
 const Hero = () => {
 
@@ -41,7 +42,7 @@ const Hero = () => {
           <button className="bg-red-600 px-7 py-4 mt-10 flex justify-center items-center text-white rounded-full w-200">
             Shop now
             <img
-              src="/src/assets/icons/arrow-right.svg"
+              src={arrowRight}
               className="ml-2 w-5 h-5"
             />
           </button>
