@@ -1,0 +1,9 @@
+.open{
+    display: hidden;
+    transform : scale(1);
+  }
+  @media (max-width: 767px){
+.open {
+    display: flex;
+  }
+}
