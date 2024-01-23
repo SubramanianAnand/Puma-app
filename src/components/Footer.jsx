@@ -6,9 +6,9 @@ import { instagram } from "../assets/icons";
 import { copyrightSign } from "../assets/icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { motion } from "framer-motion";
 
 const Footer = () => {
-
   useEffect(() => {
     AOS.init();
   }, []);
@@ -50,22 +50,52 @@ const Footer = () => {
               </h4>
               <ul>
                 <li className="mt-3 text-base leadig-normal text-white hover:text-gray-500">
-                  <a href="/">Puma Shoe 1</a>
+                  <motion.button
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <a href="/">Puma Shoe 1</a>
+                  </motion.button>
                 </li>
                 <li className="mt-3 text-base leadig-normal text-white hover:text-gray-500">
-                  <a href="/">Puma Shoe 2</a>
+                  <motion.button
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <a href="/">Puma Shoe 2</a>
+                  </motion.button>
                 </li>
                 <li className="mt-3 text-base leadig-normal text-white hover:text-gray-500">
-                  <a href="/">Puma Shoe 3</a>
+                  <motion.button
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <a href="/">Puma Shoe 3</a>
+                  </motion.button>
                 </li>
                 <li className="mt-3 text-base leadig-normal text-white hover:text-gray-500">
-                  <a href="/">Puma Shoe 4</a>
+                  <motion.button
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <a href="/">Puma Shoe 4</a>
+                  </motion.button>
                 </li>
                 <li className="mt-3 text-base leadig-normal text-white hover:text-gray-500">
-                  <a href="/">Puma Shoe 5</a>
+                  <motion.button
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <a href="/">Puma Shoe 5</a>
+                  </motion.button>
                 </li>
                 <li className="mt-3 text-base leadig-normal text-white hover:text-gray-500">
-                  <a href="/">Puma Shoe 6</a>
+                  <motion.button
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <a href="/">Puma Shoe 6</a>
+                  </motion.button>
                 </li>
               </ul>
             </div>
@@ -75,19 +105,44 @@ const Footer = () => {
               </h4>
               <ul>
                 <li className="mt-3 text-base leadig-normal text-white hover:text-gray-500">
-                  <a href="/">About Us</a>
+                  <motion.button
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <a href="/">About Us</a>
+                  </motion.button>
                 </li>
                 <li className="mt-3 text-base leadig-normal text-white hover:text-gray-500">
-                  <a href="/">FAQs</a>
+                  <motion.button
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <a href="/">FAQs</a>
+                  </motion.button>
                 </li>
                 <li className="mt-3 text-base leadig-normal text-white hover:text-gray-500">
-                  <a href="/">How it works</a>
+                  <motion.button
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <a href="/">How it works</a>
+                  </motion.button>
                 </li>
                 <li className="mt-3 text-base leadig-normal text-white hover:text-gray-500">
-                  <a href="/">Privacy Policy</a>
+                  <motion.button
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <a href="/">Privacy Policy</a>
+                  </motion.button>
                 </li>
                 <li className="mt-3 text-base leadig-normal text-white hover:text-gray-500">
-                  <a href="/">Payment Policy</a>
+                  <motion.button
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <a href="/">Payment Policy</a>
+                  </motion.button>
                 </li>
               </ul>
             </div>
@@ -97,10 +152,20 @@ const Footer = () => {
               </h4>
               <ul>
                 <li className="mt-3 text-base leadig-normal text-white hover:text-gray-500">
-                  <a href="/">customer@puma.com</a>
+                <motion.button
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <a href="/">customer@puma.com</a>
+                  </motion.button>
                 </li>
                 <li className="mt-3 text-base leadig-normal text-white hover:text-gray-500">
-                  <a href="/">+92554862354</a>
+                <motion.button
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <a href="/">+92554862354</a>
+                  </motion.button>
                 </li>
               </ul>
             </div>

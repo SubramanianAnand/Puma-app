@@ -30,16 +30,16 @@ const Nav = () => {
             />
           </a>
           <ul className="flex-1 flex justify-center items-center gap-16 font-montserrat text-lg text-gray-500 max-lg:hidden">
-            <li className=" hover:text-red-500">
+            <li className=" hover:text-red-500 hover:scale-150">
               <a href="#home">Home</a>
             </li>
-            <li className=" hover:text-red-500">
+            <li className=" hover:text-red-500 hover:scale-150">
               <a href="#about">About Us</a>
             </li>
-            <li className=" hover:text-red-500">
+            <li className=" hover:text-red-500 hover:scale-150">
               <a href="#product">Products</a>
             </li>
-            <li className=" hover:text-red-500">
+            <li className=" hover:text-red-500 hover:scale-150">
               <a href="#contact">Contact Us</a>
             </li>
           </ul>

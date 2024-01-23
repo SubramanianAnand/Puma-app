@@ -45,7 +45,7 @@ const Hero = () => {
             Discover stylish Puma arrivals, quality
             <br /> comfort, and innovation for your active life.
           </p>
-          <button className="bg-red-600 px-7 py-4 mt-10 flex justify-center items-center text-white rounded-full w-200">
+          <button className="bg-red-600 px-7 py-4 mt-10 flex justify-center items-center text-white rounded-full w-200 shadow-2xl  font-semibold bg-gradient-to-r from-[#b13c3c] via-[#f03030] to-[#e12339] hover:shadow-xl hover:shadow-green-500 hover:scale-105 duration-300 hover:from-[#047857] hover:to-[#14b8a6]">
             Shop now
             <img
               src={arrowRight}

@@ -19,6 +19,9 @@
 
 #menuToggle a:hover {
   color: tomato;
+  --tw-scale-x: 1.5;
+  --tw-scale-y: 1.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 #menuToggle input {
@@ -44,7 +47,7 @@
   margin-bottom: 5px;
   position: relative;
 
-  background: #cdcdcd;
+  background: black;
   border-radius: 3px;
 
   z-index: 1;
@@ -98,6 +101,11 @@
 #menu li {
   padding: 10px 0;
   font-size: 22px;
+}
+#menu li:hover{
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 #menuToggle input:checked ~ ul {

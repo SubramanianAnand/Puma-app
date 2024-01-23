@@ -20,7 +20,7 @@ const Subscribe = () => {
             className='input'
             />
             <div className='flex max-sm:justify-end items-center max-sm:w-full'>
-                <button className='bg-red-600 px-7 py-4 gap-2 border text-lg flex justify-center items-center text-white rounded-full w-full'>Sign Up</button>
+                <button className='bg-red-600 px-7 py-4 gap-2 border text-lg flex justify-center items-center text-white rounded-full w-full shadow-2xl  font-semibold bg-gradient-to-r from-[#b13c3c] via-[#f03030] to-[#e12339] hover:shadow-xl hover:shadow-green-500 hover:scale-105 duration-300 hover:from-[#047857] hover:to-[#14b8a6]'>Sign Up</button>
             </div>
         </div>
     </section>

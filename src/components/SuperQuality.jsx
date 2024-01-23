@@ -23,7 +23,7 @@ const SuperQuality = () => {
         </p>
         <p className="text-gray-500 mt-6 lg:max-w-lg">Our dedication to detail and excellence ensures your satisfaction</p>
         <div className="mt-11">
-            <button className="bg-red-600 px-7 py-4 mt-10 flex justify-center items-center text-white rounded-full w-200">View details</button>
+            <button className="bg-red-600 px-7 py-4 mt-10 flex justify-center items-center text-white rounded-full w-200 shadow-2xl  font-semibold bg-gradient-to-r from-[#b13c3c] via-[#f03030] to-[#e12339] hover:shadow-xl hover:shadow-green-500 hover:scale-105 duration-300 hover:from-[#047857] hover:to-[#14b8a6]">View details</button>
         </div>
       </div>
       <div data-aos="fade-left" className="flex justify-center items-center">
