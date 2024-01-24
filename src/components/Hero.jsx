@@ -33,7 +33,7 @@ const Hero = () => {
   return (
     <section id="home" className="px-8 py-8 xl:padding-1 wide:padding-r padding-b">
       <section  className="flex w-100 xl:flex-row flex-col justify-center min-h-screen gap-10 max-container">
-        <div data-aos="fade-right" className="relative .xl\:w-2\/5  flex flex-col justify-center items-start w-50 pt-28">
+        <div data-aos="fade-right" className="relative .xl\:w-2\/5  flex flex-col justify-center items-start w-50 pt-18">
           <p className="text-red-600 text-xl ">Our Sports collections</p>
           <h1 className="text-8xl font-bold mt-10">
             <span className="xl:bg-white xl:whitespace-nowrap">
