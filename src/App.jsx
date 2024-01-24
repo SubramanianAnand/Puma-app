@@ -17,7 +17,7 @@ const App = () => {
     let targets = gsap.utils.toArray(".ball");
     window.addEventListener("mousemove", (e) => {
       gsap.to(targets, {
-        duration: 0.5,
+        duration: 0.6,
         x: e.clientX,
         y: e.clientY,
         ease: "power1.out",
@@ -30,11 +30,9 @@ const App = () => {
   return (
     <>
       <main className="relative">
-        <div className="ball bg-red-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
-        <div className="ball bg-red-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
-        <div className="ball bg-red-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
-        <div className="ball bg-red-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
-        <div className="ball bg-red-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
+        <div className="ball z-10 bg-transparent border border-black w-10 h-10 fixed top-0 left-0 rounded-full hover:border-red-500"></div>
+        <div className="ball z-10 bg-red-500 w-4 h-4 fixed top-0 left-0 rounded-full"></div>
+        
         <Nav />
         <section className="xl:padding-l wide:padding-r padding-b">
           <Hero />

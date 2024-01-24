@@ -16,6 +16,7 @@
     "aos": "^2.3.4",
     "framer-motion": "^10.18.0",
     "gsap": "^3.12.5",
+    "gsap-trial": "^3.12.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-headroom": "^3.2.1"

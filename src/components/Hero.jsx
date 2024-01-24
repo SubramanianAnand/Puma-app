@@ -1,4 +1,4 @@
-import {React,  useEffect, useState } from "react";
+import { React, useEffect, useState } from "react";
 import shoe1 from "../assets/pngwing.com.png";
 import shoe2 from "../assets/pngwing1.com.png";
 import shoe3 from "../assets/pngwing2.com.png";
@@ -7,8 +7,8 @@ import { arrowRight } from "../assets/icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Hero = () => {
 
+const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(shoe1);
 
   useEffect(() => {
@@ -17,23 +17,29 @@ const Hero = () => {
 
   const shoes = [
     {
-        thumbnail: shoe1,
-        bigShoe: shoe1,
+      thumbnail: shoe1,
+      bigShoe: shoe1,
     },
     {
-        thumbnail: shoe2,
-        bigShoe: shoe2,
+      thumbnail: shoe2,
+      bigShoe: shoe2,
     },
     {
-        thumbnail: shoe3,
-        bigShoe: shoe3,
+      thumbnail: shoe3,
+      bigShoe: shoe3,
     },
-];
+  ];
 
   return (
-    <section id="home" className="px-8 py-8 xl:padding-1 wide:padding-r padding-b">
-      <section  className="flex w-100 xl:flex-row flex-col justify-center min-h-screen gap-10 max-container">
-        <div data-aos="fade-right" className="relative .xl\:w-2\/5  flex flex-col justify-center items-start w-50 pt-18">
+    <section
+      id="home"
+      className="px-8 py-8 xl:padding-1 wide:padding-r padding-b"
+    >
+      <section className="flex w-100 xl:flex-row flex-col justify-center min-h-screen gap-10 max-container">
+        <div
+          data-aos="fade-right"
+          className="relative .xl\:w-2\/5  flex flex-col justify-center items-start w-50 pt-18"
+        >
           <p className="text-red-600 text-xl ">Our Sports collections</p>
           <h1 className="text-8xl font-bold mt-10">
             <span className="xl:bg-white xl:whitespace-nowrap">
@@ -47,10 +53,7 @@ const Hero = () => {
           </p>
           <button className="bg-red-600 px-7 py-4 mt-10 flex justify-center items-center text-white rounded-full w-200 shadow-2xl  font-semibold bg-gradient-to-r from-[#b13c3c] via-[#f03030] to-[#e12339] hover:shadow-xl hover:shadow-green-500 hover:scale-105 duration-300 hover:from-[#047857] hover:to-[#14b8a6]">
             Shop now
-            <img
-              src={arrowRight}
-              className="ml-2 w-5 h-5"
-            />
+            <img src={arrowRight} className="ml-2 w-5 h-5" />
           </button>
 
           <section className="flex justify-start items-start  flex-wrap w-full mt-20 gap-16">
@@ -78,9 +81,12 @@ const Hero = () => {
                 <span> Customers</span>
               </p>
             </div>
-          </section> 
+          </section>
         </div>
-        <div data-aos="fade-left" className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
+        <div
+          data-aos="fade-left"
+          className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center"
+        >
           <img
             src={bigShoeImg}
             alt="shoe colletion"
@@ -131,18 +137,18 @@ const Hero = () => {
               </div>
             </div>
           </div> */}
-          <div className='flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6'>
-          {shoes.map((image, index) => (
-            <div key={index}>
-              <ShoeCard
-                index={index}
-                imgURL={image}
-                changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
-                bigShoeImg={bigShoeImg}
-              />
-            </div>
-          ))}
-        </div> 
+          <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
+            {shoes.map((image, index) => (
+              <div key={index}>
+                <ShoeCard
+                  index={index}
+                  imgURL={image}
+                  changeBigShoeImage={(shoe) => setBigShoeImg(shoe)}
+                  bigShoeImg={bigShoeImg}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </section>
