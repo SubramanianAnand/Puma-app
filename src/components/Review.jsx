@@ -20,8 +20,8 @@ const Review = () => {
         Hear genuine stories from our satisfied customers about their
         exceptional experiences with us.
       </p>
-      <div className="flex flex-1 mt-24 justify-evenly items-center max-lg:flex-col gap-14 ">
-        <div data-aos="fade-right" className="flex justify-center items-center flex-col">
+      <div className="flex flex-1 mt-24 justify-evenly items-center max-lg:flex-col gap-14">
+        <div data-aos="fade-right" className="flex justify-center items-center flex-col border rounded-md bg-slate-200 p-10">
           <img
             src={customer1}
             alt="customer"
@@ -41,7 +41,7 @@ const Review = () => {
             </h3>
           </div>
         </div>
-        <div data-aos="fade-left" className="flex justify-center items-center flex-col">
+        <div data-aos="fade-left" className="flex justify-center items-center flex-col border rounded-md bg-slate-200 p-10">
           <img
             src={customer2}
             alt="customer"
